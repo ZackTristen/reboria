@@ -9,6 +9,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/styles/tech.css" />
+    <link rel="stylesheet" href="/styles/tabBar.css" />
     <link rel="stylesheet" href="/styles/footer.css" />
     <link rel="stylesheet" href="/styles/header.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,7 +22,230 @@
   </head>
   <body>
     <div class="d-flex flex-column mob-navigation">
-      
+       <header class="header-wrapper d-flex justify-content-center fixed-top">
+        <div class="container">
+          <div
+            class="header-part d-flex flex-row justify-content-between align-items-center"
+          >
+            <div
+              class="col-sm-3 d-flex flex-row justify-content-start align-items-center"
+            >
+              <a href="" class="profile"
+                ><img
+                  src="/images/Profile.svg"
+                  alt=""
+                  class="img-fluid profile-img"
+              /></a>
+              <div class="number-wrapper" id="number-wrapper">
+                <a
+                  href="tel:+79376652420"
+                  class="phone-icon"
+                  aria-label="Позвонить"
+                >
+                  <img
+                    src="/images/phone.svg"
+                    class="img-fluid"
+                    alt="Позвонить"
+                  />
+                </a>
+                <span class="number">+ 7 (937) 665-24-20</span>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 d-flex flex-row justify-content-center align-items-center"
+            >
+              <a href="/" aria-label="На главную страницу">
+                <img
+                  class="img-fluid small-logo"
+                  src="/images/Logo.svg"
+                  alt="Логотип Reboria"
+                />
+              </a>
+            </div>
+            <div
+              class="col-sm-3 d-flex flex-row justify-content-end align-items-center"
+            >
+              <div class="search-container" id="search-container">
+                <img
+                  src="/images/white-search.svg"
+                  alt="Поиск"
+                  class="search-icon"
+                  id="search-icon-white"
+                />
+                <img
+                  src="/images/black-search.svg"
+                  alt="Поиск"
+                  class="search-icon"
+                  id="search-icon-black"
+                />
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder=""
+                  aria-label="Поиск"
+                />
+              </div>
+              <div
+                class="burger-menu"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              >
+                <div
+                  class="hamburger"
+                  id="hamburger-button"
+                  aria-label="Открыть меню"
+                >
+                  <svg viewBox="0 0 100 100" width="20" height="20">
+                    <path
+                      id="cross"
+                      class="line top"
+                      d="M 10 25 H 90"
+                      stroke="white"
+                      stroke-width="8"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      class="line middle"
+                      d="M 10 50 H 90"
+                      stroke="white"
+                      stroke-width="8"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      id="cross"
+                      class="line bottom"
+                      d="M 10 75 H 90"
+                      stroke="white"
+                      stroke-width="8"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <a href="" id="geo" class="geo" aria-label="Местоположение"
+                ><img src="/images/geo.svg" class="img-fluid" alt=""
+              /></a>
+
+              <a
+                href=""
+                class="nav-link bucket"
+                id="bucket"
+                aria-label="Корзина"
+              ></a>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-around align-items-center"
+          >
+            <div class="col-sm-12">
+              <nav
+                class="sidebar flex-row justify-content-around align-items-center d-flex"
+                id="sidebar"
+                aria-label="Основная навигация"
+              >
+                <a class="nav-link" href="/AboutBrand.html">О бренде</a>
+                <a class="nav-link" href="/Product.html">Продукция</a>
+                <a class="nav-link" href="/Contacts.html">Контакты</a>
+                <a class="nav-link" href="/Tech.html">Технологии</a>
+                <a class="nav-link" href="#contacs">Консьерж-сервис</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+        data-bs-scroll="true"
+      >
+        <div class="offcanvas-header" data-bs-theme="dark">
+          <div class="search-container side-search" id="search-container">
+            <img
+              src="/images/white-search.svg"
+              alt="Поиск"
+              class="search-icon search-icon-side"
+              id="search-icon-white"
+            />
+            <img
+              src="/images/black-search.svg"
+              alt="Поиск"
+              class="search-icon  search-icon-side"
+              id="search-icon-black"
+            />
+            <input
+              type="text"
+              class="search-input"
+              placeholder=""
+              aria-label="Поиск"
+            />
+          </div>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Закрыть"
+          ></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <a href="" id="" class="geo-wrapper-side d-flex flex-row align-content-center " aria-label="Местоположение"
+            ><img src="/images/geo.svg"  class="icon-sidebar" alt=""
+          /><span class="text-center geo-side"
+          >Тольятти</span></a>
+
+          <a href="" class="number-sidebar-wrapper d-flex flex-row align-content-center "
+            ><img src="/images/phone.svg" alt="" class="icon-sidebar"/><span class="text-center number-side"
+              >+ 7 (937) 665-24-20</span
+            ></a
+          >
+
+          <nav
+            class="navigation flex-column justify-content-center align-items-start d-flex"
+            id="sidebar"
+            aria-label="Основная навигация"
+          >
+            <a
+              class="nav-link nav-sidebar d-flex align-content-center"
+              href="/AboutBrand.html"
+              ><img src="/images/bullets.svg" alt="" class="bullet" /><span
+                >О бренде</span
+              ></a
+            >
+            <a
+              class="nav-link nav-sidebar d-flex align-content-center"
+              href="/Product.html"
+              ><img src="/images/bullets.svg" alt="" class="bullet" /><span
+                >Продукция</span
+              ></a
+            >
+            <a
+              class="nav-link nav-sidebar d-flex align-content-center"
+              href="/Contacts.html"
+              ><img src="/images/bullets.svg" alt="" class="bullet" /><span
+                >Контакты</span
+              ></a
+            >
+            <a
+              class="nav-link nav-sidebar d-flex align-content-center"
+              href="/Tech.html"
+              ><img src="/images/bullets.svg" alt="" class="bullet" /><span
+                >Технологии</span
+              ></a
+            >
+            <a
+              class="nav-link nav-sidebar d-flex align-content-center"
+              href="#contacs"
+              ><img src="/images/bullets.svg" alt="" class="bullet" /><span
+                >Консьерж-сервис</span
+              ></a
+            >
+          </nav>
+        </div>
+      </div>
       
       
       <section class="hero-section">
@@ -77,6 +301,291 @@
 
      
     </div>
+     <footer class="container footer" id="contacs">
+      <div class="row footer-top-content">
+        <div
+          class="col-md-4 col-sm-12 footer-phone d-flex flex-row align-items-center justify-content-center"
+        >
+          <a class="link geo-footer" hrefbtn="www.google.com" role="button"></a>
+          <span class="number-footer">+ 7 (937) 665-24-20</span>
+        </div>
+
+        <div
+          class="col-md-4 col-sm-12 d-flex align-items-center justify-content-center"
+        >
+          <img class="img-fluid" src="/images/Logo.svg" alt="Логотип Reboria" />
+        </div>
+
+        <div
+          class="col-md-4 col-sm-12 footer-panel d-flex align-items-center justify-content-center"
+        >
+          <section
+            class="d-flex flex-row justify-content-center align-items-center"
+          >
+            <a
+              class="link icon-link profile-footer mt-2"
+              hrefbtn="www.google.com"
+              role="button"
+            ></a>
+            <div class="search-container" id="search-container">
+              <img
+                src="/images/white-search.svg"
+                alt="Поиск"
+                class="search-icon"
+                id="search-icon-white"
+              />
+              <img
+                src="/images/black-search.svg"
+                alt="Поиск"
+                class="search-icon"
+                id="search-icon-black"
+              />
+              <input
+                type="text"
+                class="search-input"
+                placeholder=""
+                aria-label="Поиск"
+              />
+            </div>
+            <a
+              class="link icon-link bucket-footer"
+              hrefbtn="www.google.com"
+              role="button"
+            ></a>
+          </section>
+        </div>
+      </div>
+      <div class="container footer-middle-content">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <nav class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  О бренде
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#footerAccordion"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="#">История</a></li>
+                    <li><a href="#">Награды</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Карьера в REBORIA</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="col-12 col-md-3">
+            <nav class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Поддержка
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#footerAccordion"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="#">Сервисные центры</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Обмен и возврат</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="col-12 col-md-3">
+            <nav class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Блог о здоровье
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#footerAccordion"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="#">Здоровье стоп</a></li>
+                    <li><a href="#">Психология здоровья</a></li>
+                    <li><a href="#">Физическая активность</a></li>
+                    <li><a href="#">Восстановление после травм</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <nav class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  Популярное
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#footerAccordion"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="#">Обувь</a></li>
+                    <li><a href="#">Ортопедические стельки</a></li>
+                    <li><a href="#">Косметика для ног</a></li>
+                    <li><a href="#">Косметика для обуви</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="container contacs-info">
+        <div class="row contacs">
+          <div
+            class="col-sm-2 col-md-2 d-flex align-items-center justify-content-evenly"
+          >
+            <a
+              class="link icon-link what"
+              hrefbtn="www.google.com"
+              role="button"
+              aria-label="WhatsApp"
+            ></a>
+          </div>
+          <div
+            class="col-sm-2 col-md-2 d-flex align-items-center justify-content-evenly"
+          >
+            <a
+              class="link icon-link vk"
+              hrefbtn="www.google.com"
+              role="button"
+              aria-label="ВКонтакте"
+            ></a>
+          </div>
+          <div class="col-sm-4 col-md-4 text-center">
+            <a class="link icon-link" hrefbtn="www.google.com" role="button"
+              >Обратный звонок</a
+            >
+          </div>
+          <div
+            class="col-sm-2 col-md-2 d-flex align-items-center justify-content-evenly"
+          >
+            <a
+              class="link icon-link tele"
+              hrefbtn="www.google.com"
+              role="button"
+              aria-label="Telegram"
+            ></a>
+          </div>
+          <div
+            class="col-sm-2 col-md-2 d-flex align-items-center justify-content-evenly"
+          >
+            <a
+              class="link icon-link you"
+              hrefbtn="www.google.com"
+              role="button"
+              aria-label="YouTube"
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row rights text-center">
+        <div class="col-12">
+          <p>
+            &copy; 2025 REBORIA - официальный сайт.
+            <a href="#">Политика в области конфиденциальных данных</a>.
+            <a href="#">Публичный Договор Оферты</a>
+          </p>
+        </div>
+      </div>
+      <footer class="tab-bar">
+        <div class="tab-bar-wrapper">
+          <div class="gradient w-100 fixed-bottom"></div>
+          <nav class="bottom-tab-bar fixed-bottom">
+            <div class="container-fluid">
+              <div class="row justify-content-around h-100">
+                <div class="col-2">
+                  <a href="#" class="tab-item"> Каталог </a>
+                </div>
+                <div class="col-2">
+                  <a href="#" class="tab-item"> Магазины </a>
+                </div>
+                <div class="col-2">
+                  <a href="#" class="tab-item">
+                    <img
+                      src="/images/Logo-sm.svg"
+                      class="logo-img"
+                      alt="Логотип Reboria"
+                    />
+                  </a>
+                </div>
+                <div class="col-2">
+                  <a href="#" class="tab-item"> Корзина </a>
+                </div>
+                <div class="col-2">
+                  <a
+                    class="profile-tab-bar tab-item"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                  >
+                    Кабинет
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </footer>
+    </footer>
+    <script src="tabBar.js"></script>
     <script src="/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
