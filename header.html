@@ -1,0 +1,191 @@
+<section
+  class="offcanvas offcanvas-end profile-wrapper"
+  tabindex="-1"
+  id="offcanvasRight"
+  aria-labelledby="offcanvasRightLabel"
+>
+  <div class="offcanvas-header">
+    <a href="" id="geo-sidebar"></a>
+    <div class="wrapper-profile">
+      <button
+        type="button"
+        class="btn-close-profile"
+        data-bs-dismiss="offcanvas"
+        aria-label="Закрыть"
+      >
+        <svg viewBox="0 0 30 30" width="20" height="20">
+          <line class="line" x1="5" y1="5" x2="25" y2="25" />
+          <line class="line" x1="25" y1="5" x2="5" y2="25" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="offcanvas-body">
+    <div class="container">
+      <div class="form-container">
+        <h2 class="text-center mb-4">Личный кабинет</h2>
+
+        <form>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Номер телефона</label>
+            <input
+              type="tel"
+              class="form-control tab-form"
+              id="phone"
+              placeholder="+7 (999) 123-45-67"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="code" class="form-label">Пароль</label>
+            <input
+              type="text"
+              class="form-control tab-form"
+              id="code"
+              placeholder="******"
+              required
+            />
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary">Войти</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<header class="header-wrapper fixed-top d-flex align-items-center">
+  <div class="container header-wrapper-content" id="header-wrapper-content">
+    <div
+      class="d-flex header-content flex-row justify-content-center align-items-center"
+      id="header-content"
+    >
+      <div
+        class="col-md-3 d-flex flex-row justify-content-start header-left-panel align-items-center"
+        id="left-panel"
+      >
+        <div class="hamburger" id="hamburger-button" aria-label="Открыть меню">
+          <svg viewBox="0 0 100 100" width="30" height="30">
+            <path
+              id="cross"
+              class="line top"
+              d="M 10 25 H 90"
+              stroke="white"
+              stroke-width="8"
+              stroke-linecap="round"
+            />
+            <path
+              class="line middle"
+              d="M 10 50 H 90"
+              stroke="white"
+              stroke-width="8"
+              stroke-linecap="round"
+            />
+            <path
+              id="cross"
+              class="line bottom"
+              d="M 10 75 H 90"
+              stroke="white"
+              stroke-width="8"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <a href="" id="geo" class="geo" aria-label="Местоположение"></a>
+
+        <div class="number-wrapper" id="number-wrapper">
+          <a href="tel:+79376652420" class="phone-icon" aria-label="Позвонить">
+            <img src="/images/phone.svg" class="img-fluid" alt="Позвонить" />
+          </a>
+          <span class="number">+ 7 (937) 665-24-20</span>
+        </div>
+      </div>
+      <div class="col-md-6 small-logo-wrapper text-center">
+        <a href="/" aria-label="На главную страницу">
+          <img
+            class="img-fluid small-logo"
+            src="/images/Logo.svg"
+            alt="Логотип Reboria"
+          />
+        </a>
+      </div>
+      <div
+        class="col-md-3 d-flex flex-row header-right-panel justify-content-end align-items-center"
+      >
+        <div class="search-container" id="search-container">
+          <img
+            src="/images/white-search.svg"
+            alt="Поиск"
+            class="search-icon"
+            id="search-icon-white"
+          />
+          <img
+            src="/images/black-search.svg"
+            alt="Поиск"
+            class="search-icon"
+            id="search-icon-black"
+          />
+          <input
+            type="text"
+            class="search-input"
+            placeholder=""
+            aria-label="Поиск"
+          />
+        </div>
+
+        <button
+          class="profile-sidebar"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <a
+            class="nav-link profile"
+            id="profile"
+            aria-current="page"
+            href="#"
+            aria-label="Профиль"
+          >
+          </a>
+        </button>
+
+        <a href="" class="nav-link bucket" id="bucket" aria-label="Корзина"></a>
+      </div>
+      <div class="navigation" id="navigation">
+        <div
+          class="close-button"
+          id="close-sidebar-button"
+          aria-label="Закрыть меню"
+        >
+          <svg viewBox="0 0 30 30" width="20" height="20">
+            <line class="line" x1="5" y1="5" x2="25" y2="25" />
+            <line class="line" x1="25" y1="5" x2="5" y2="25" />
+          </svg>
+        </div>
+        <div class="wrapper-sidebar w-100" id="wrapper-sidebar">
+          <div
+            class="sidebar-icons d-flex flex-column justify-content-center align-items-center"
+          >
+            <div class="icons-wrapper">
+              <div class="icons-content"></div>
+              <div class="icons-content-1"></div>
+              <div class="icons-content-2"></div>
+            </div>
+          </div>
+          <nav
+            class="sidebar non-active flex-row justify-content-around align-items-center d-flex"
+            id="sidebar"
+            aria-label="Основная навигация"
+          >
+            <a class="nav-link nav-sidebar" href="/AboutBrand.html">О бренде</a>
+            <a class="nav-link nav-sidebar" href="/Product.html">Продукция</a>
+            <a class="nav-link nav-sidebar" href="/Contacts.html">Контакты</a>
+            <a class="nav-link nav-sidebar" href="/Tech.html">Технологии</a>
+            <a class="nav-link nav-sidebar" href="#contacs">Консьерж-сервис</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

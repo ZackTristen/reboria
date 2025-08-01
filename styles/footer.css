@@ -1,0 +1,163 @@
+.footer-middle-content .accordion-button {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #ddd; 
+  
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18.29px;
+    letter-spacing: 0%;
+  }
+  .geo-footer {
+  content: url("images/geo.svg");
+  width: 18px;
+  height: 25px;
+  margin-right: 10px;
+  position: relative;
+}
+  .footer-middle-content .accordion-body {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18.29px;
+    letter-spacing: 0%;
+  }
+  
+  .footer-middle-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-middle-content li {
+    margin-bottom: 0.5rem;
+  }
+  .footer-middle-content {
+    margin-bottom: 53px;
+  }
+  
+  .footer-middle-content .accordion-button {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .footer-middle-content .accordion-body {
+    padding: 1rem;
+  }
+  
+  .footer-middle-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-middle-content li {
+    margin-bottom: 0.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-middle-content .accordion {
+      display: block !important;
+    }
+  
+    .footer-middle-content .accordion-item {
+      border: none;
+      margin-bottom: 0;
+    }
+  
+    .footer-middle-content .accordion-header {
+      margin-bottom: 8px;
+    }
+    .accordion-body ul li a {
+      margin-bottom: 8px;
+    }
+    .footer-middle-content .accordion-button {
+      display: block;
+      padding: 0;
+      border: none;
+      background-color: transparent !important;
+      box-shadow: none !important;
+      color: inherit;
+      cursor: default;
+      text-align: left;
+      pointer-events: none;
+    }
+  
+    .footer-middle-content .accordion-button:not(.collapsed) {
+      color: inherit;
+    }
+    .footer-middle-content .accordion-button::after {
+      display: none;
+    }
+  
+    .footer-middle-content .accordion-body {
+      padding: 0;
+    }
+  
+    .footer-middle-content .accordion-collapse {
+      display: block !important;
+      transition: none !important;
+    }
+  
+    .footer-middle-content ul {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .geo-footer {
+    content: url("/images/geo.svg");
+    width: 18px;
+    height: 25px;
+    margin-right: 10px;
+    position: relative;
+  }
+  .number-footer::before {
+    content: url("/images/phone.svg");
+    width: 18px;
+    height: 25px;
+    position: relative;
+    top: 2px;
+  }
+  .profile-footer::after {
+    content: url("/images/Profile.svg");
+  }
+  .bucket {
+    display: none;
+    content: url("/images/bucket.svg");
+  }
+  .what::after {
+    content: url("/images/whats.svg");
+  }
+  .vk::after {
+    content: url("/images/vk.svg");
+  }
+  
+  .tele::after {
+    content: url("/images/tele.svg");
+  }
+  .you::after {
+    content: url("/images/you.svg");
+  }
+  .footer {
+    color: rgba(255, 255, 255, 1);
+  }
+  .footer-top-content {
+    margin-top: 65px;
+    margin-bottom: 61px;
+  }
+  
+  .contacs-info {
+    margin-bottom: 33px;
+  }
+  
+  .rights > div > p {
+    margin-bottom: 28px;
+    color: rgba(255, 255, 255, 1);
+  
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 19.5px;
+  }
+  .icon-link {
+    margin-bottom: 10px;
+  }

@@ -1,0 +1,271 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #141313;
+
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav-link {
+  color: #fff;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 921px;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text-container {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+  color: white;
+}
+
+.hero-text-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 20%,
+    rgba(255, 255, 255, 0.5) 80%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: -1;
+}
+
+.hero-text {
+  color: #141313;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.8rem;
+  }
+  .hero-text-container {
+    bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-text {
+    font-size: 1.5rem;
+  }
+  .hero-text-container {
+    width: 95%;
+  }
+}
+.title-pulse {
+  margin-top: 72px;
+  margin-bottom: 106px;
+
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 60.95px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.pulse-wrapper {
+  margin-bottom: 50px;
+}
+.pulse-wrapper {
+  display: flex;
+  justify-content: center;
+  max-height: 112px;
+  max-width: 425px;
+}
+.pulse-img {
+  margin-right: 15px;
+}
+.pulse-text {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  align-content: center;
+  color: white;
+}
+
+.pulse-text-green {
+  text-align: center;
+
+  border: 2px solid transparent;
+  background: linear-gradient(#333333, #333333) padding-box,
+    linear-gradient(90deg, #c3ce25 0%, #468d36 100%) border-box;
+  border-radius: 50px;
+}
+.pulse-text-yellow {
+  text-align: center;
+
+  border: 2px solid transparent;
+  background: linear-gradient(#333333, #333333) padding-box,
+    linear-gradient(90deg, #feea01 0%, #f08316 100%) border-box;
+  border-radius: 50px;
+}
+
+.pulse-text-red {
+  text-align: center;
+
+  border: 2px solid transparent;
+  background: linear-gradient(#333333, #333333) padding-box,
+    linear-gradient(90deg, #ee7372 0%, #e62531 100%) border-box;
+  border-radius: 50px;
+}
+
+.pulse-text-blue {
+  text-align: center;
+  border: 2px solid transparent;
+  background: linear-gradient(#333333, #333333) padding-box,
+    linear-gradient(90deg, #0387bf 0%, #1d4f92 53.5%, #46347f 100%) border-box;
+  border-radius: 50px;
+}
+
+.form-quest {
+  max-width: 963px;
+  min-height: 362px;
+  margin-bottom: 105px;
+}
+.descr-form {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 36.57px;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 100%;
+  word-wrap: break-word;
+  padding: 49px;
+}
+
+.phone-label,
+.name-label {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 18.29px;
+  letter-spacing: 0%;
+}
+.form-mission {
+  border: 3px solid #c3ce25;
+  border-radius: 40px 40px;
+}
+.input-form {
+  margin-top: 42px;
+  margin-bottom: 47px;
+}
+.form-advisor {
+  border: 3px solid #c3ce25;
+  border-radius: 30px 30px;
+  width: 100%;
+  background-color: #c3ce25;
+}
+
+.input-field .form-label {
+  max-width: 100%;
+  margin-left: 0;
+  outline: none;
+  border: none;
+  position: relative;
+  
+}
+.input-field .form-label {
+  max-width: 100%;
+  outline: none;
+  border: none;
+  position: relative;
+ 
+}
+.form-control-s,
+.form-control-s:active,
+.form-control-s:focus {
+  border: none !important;
+  background-color: transparent !important;
+  color: inherit !important;
+  outline: none !important;
+}
+.agree-label {
+  margin-left: 10px;
+  margin-top: 7px;
+  word-wrap: break-word;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 18.29px;
+  letter-spacing: 0%;
+}
+.link-politics {
+  text-decoration: underline 1.1px;
+}
+
+.form-label {
+  position: relative;
+  top: 15px;
+}
+.input-submit {
+  color: #fff;
+  border: none;
+  width: 215px;
+  height: 51.82px;
+  background: rgba(225, 46, 55, 1);
+  box-shadow: 5px 5px 15px -5px rgb(255, 255, 255) inset;
+  border-radius: 50px 50px;
+  align-content: center;
+
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 18.29px;
+  letter-spacing: 0%;
+}
+.agreement {
+  word-wrap: break-word;
+  margin-bottom: 42px;
+}
+input:focus,
+textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: transparent;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.info-form {
+  max-width: 533px;
+}
+.info-form-text span {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 24.38px;
+  letter-spacing: 0%;
+  text-align: center;
+}

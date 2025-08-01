@@ -1,0 +1,67 @@
+body {
+  padding-bottom: 85px!important;
+}
+@media (max-width: 1024px) {
+  .tab-bar {
+    display: block !important;
+  }
+}
+.tab-bar {
+  display: none;
+}
+
+
+.bottom-tab-bar {
+  max-width: 480px;
+  height: 85px;
+  background: linear-gradient(180deg, #413d3d 20%, #141313 100%);
+  margin: 0 auto;
+  color: white;
+  z-index: 3;
+  padding: 10px;
+  border-radius: 20px 20px 0 0;
+  transition: 0.7s;
+}
+
+.tab-item {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  height: 100%;
+}
+
+.tab-item:hover {
+  color: white;
+}
+
+.logo-img {
+  max-width: 40px;
+  max-height: 40px;
+}
+.tab-item {
+  font-size: 12px;
+}
+.gradient {
+  background: linear-gradient(180deg, #141313 20%, #141313 100%);
+  height: 70px;
+  z-index: 3;
+  filter: blur(1px);
+  transition: 0.4s;
+}
+.visible-gradient {
+  transform: translateY(100%); /* Скрываем блок, перемещая его вверх за пределы экрана */
+  opacity: 0;
+  pointer-events: none;
+}
+.visible-tabbar {
+  transform: translateY(100%); /* Скрываем блок, перемещая его вверх за пределы экрана */
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form-control {
+  margin-top: 10px;
+}
